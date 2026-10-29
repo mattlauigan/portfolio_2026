@@ -12,7 +12,7 @@ import {
 import { PROJECTS } from './data/project';
 import { SOCIALS } from './data/socials';
 import { SKILLS } from './data/skills';
-import { NavComponenet } from './components/NavComponent';
+import { HeaderComponent } from './components/HeaderComponent';
 import { SocialLinkComponent } from './components/SocialLinkComponent';
 
 
@@ -158,7 +158,7 @@ export default function App() {
       </div>
 
       {/* NAV */}
-      <NavComponenet scrollTo={(scrollTo)} scrolled={scrolled} activeSection={activeSection}/>
+      <HeaderComponent scrollTo={(scrollTo)} scrolled={scrolled} activeSection={activeSection}/>
 
 
       {/* HERO */}

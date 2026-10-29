@@ -1,3 +1,4 @@
+import MyLogo from "../assets/MyLogo";
 
 type navComponentType = {
   scrollTo: (section: string) => void
@@ -6,7 +7,7 @@ type navComponentType = {
 }
 
 
-export const NavComponenet = ({ scrollTo, scrolled, activeSection }: navComponentType) => {
+export const HeaderComponent = ({ scrollTo, scrolled, activeSection }: navComponentType) => {
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -29,7 +30,7 @@ export const NavComponenet = ({ scrollTo, scrolled, activeSection }: navComponen
           onClick={() => scrollTo('home')}
           className="font-display font-bold text-xl tracking-tight"
         >
-          <span className="text-gradient">RL</span>
+          <span className="text-gradient"><MyLogo /></span>
           <span className="text-slate-300 ml-1 font-light text-base hidden sm:inline">Raymart Lauigan</span>
         </button>
 
