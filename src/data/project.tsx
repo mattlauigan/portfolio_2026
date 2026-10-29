@@ -11,7 +11,7 @@ export const PROJECTS = [
     stack: ['Svelte', 'Typescript', 'Laravel', 'Tailwind CSS', 'Docker', 'Redis', 'REST APIs'],
     category: 'Web App',
     year: '2026',
-    image: './src/assets/banker.png',
+    image: 'https://github.com/mattlauigan/portfolio_2026/blob/main/src/assets/banker.png',
   },
   {
     title: 'Philippine Port Authority Web Portal',
@@ -38,7 +38,7 @@ export const PROJECTS = [
     stack: ['HTML', 'CSS', 'WordPress'],
     category: 'Website',
     year: '2023',
-    image: './src/assets/peacock.png',
+    image: 'https://github.com/mattlauigan/portfolio_2026/blob/main/src/assets/peacock.png',
   },
   // {
   //   title: 'E-Commerce Dashboard',
@@ -64,7 +64,7 @@ export const PROJECTS = [
     stack: ['Figma', 'Adobe XD', 'Design Systems', 'Prototyping', 'User Testing', 'Design Handoff'],
     category: 'Design',
     year: '2023',
-    image: './src/assets/polaroid.png',
+    image: 'https://github.com/mattlauigan/portfolio_2026/blob/main/src/assets/polaroid.png',
     hasLink: true
   },
   {
@@ -82,7 +82,7 @@ export const PROJECTS = [
     ],
     category: 'Mobile App',
     year: '2026',
-    image: './src/assets/possale.png',
+    image: 'https://github.com/mattlauigan/portfolio_2026/blob/main/src/assets/possale.png',
   },
 ];
 
