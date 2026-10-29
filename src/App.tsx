@@ -343,7 +343,7 @@ export default function App() {
             </p>
 
             <a
-              href="mailto:raymart.lauigan@icloud.com"
+              href="mailto:raymart.lauigan@gmail.com"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-400 text-white font-semibold transition-all duration-200 hover:shadow-xl hover:shadow-blue-500/30 active:scale-95 mb-14"
             >
               <Mail className="w-5 h-5" />
