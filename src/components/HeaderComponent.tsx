@@ -30,8 +30,10 @@ export const HeaderComponent = ({ scrollTo, scrolled, activeSection }: navCompon
           onClick={() => scrollTo('home')}
           className="font-display font-bold text-xl tracking-tight"
         >
-          <span className="text-gradient"><MyLogo /></span>
-          <span className="text-slate-300 ml-1 font-light text-base hidden sm:inline">Raymart Lauigan</span>
+          <div className="flex">
+            <span className="text-gradient mr-2"><MyLogo /></span>
+            <span className="text-slate-300 ml-1 font-light text-base hidden sm:inline">Raymart Lauigan</span>
+          </div>
         </button>
 
         <div className="flex items-center gap-1">

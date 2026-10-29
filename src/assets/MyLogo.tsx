@@ -12,7 +12,7 @@ export default function MyLogo({ width = "25", height = "25" }: SvgType) {
             width={width}
             height={height}>
             {/* Safe JSX format for internal SVG styles */}
-            <style>{`.cls-1 { fill: #def0ff; }`}</style>
+            <style>{`.cls-1 { fill: #5fa5fa; }`}</style>
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_1-2" data-name="Layer 1">
                     <path className="cls-1" d="M0,98.5V0H103.57A111.44,111.44,0,0,0,0,98.5Z" />

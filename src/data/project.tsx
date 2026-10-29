@@ -11,7 +11,7 @@ export const PROJECTS = [
     stack: ['Svelte', 'Typescript', 'Laravel', 'Tailwind CSS', 'Docker', 'Redis', 'REST APIs'],
     category: 'Web App',
     year: '2026',
-    image: 'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: './src/assets/banker.png',
   },
   {
     title: 'Philippine Port Authority Web Portal',
@@ -38,7 +38,7 @@ export const PROJECTS = [
     stack: ['HTML', 'CSS', 'WordPress'],
     category: 'Website',
     year: '2023',
-    image: 'https://images.pexels.com/photos/37071196/pexels-photo-37071196.jpeg?_gl=1*1064fwa*_ga*MzcxNTk2OTY5LjE3OTMyNDU2NjI.*_ga_8JE65Q40S6*czE3OTMyNDU2NjEkbzEkZzEkdDE3OTMyNDY0NDIkajU5JGwwJGgw',
+    image: './src/assets/peacock.png',
   },
   // {
   //   title: 'E-Commerce Dashboard',
@@ -64,7 +64,8 @@ export const PROJECTS = [
     stack: ['Figma', 'Adobe XD', 'Design Systems', 'Prototyping', 'User Testing', 'Design Handoff'],
     category: 'Design',
     year: '2023',
-    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: './src/assets/polaroid.png',
+    hasLink: true
   },
   {
     title: 'Inventory & POS System',
@@ -81,7 +82,7 @@ export const PROJECTS = [
     ],
     category: 'Mobile App',
     year: '2026',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: './src/assets/possale.png',
   },
 ];
 

@@ -57,7 +57,7 @@ function ProjectCard({ project, index, onClick }: { project: typeof PROJECTS[0];
 
   return (
     <button
-      ref={ref as React.RefObject<HTMLButtonElement>}
+      ref={ref as unknown as React.RefObject<HTMLButtonElement>}
       onClick={onClick}
       style={{ animationDelay: `${(index % 3) * 100}ms` }}
       className={`card-hover group relative bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden text-left w-full
@@ -149,6 +149,7 @@ export default function App() {
 
 
   return (
+    // <GradientDiv className="Container">
     <div className="relative min-h-screen">
       {/* Background orbs */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
@@ -158,7 +159,7 @@ export default function App() {
       </div>
 
       {/* NAV */}
-      <HeaderComponent scrollTo={(scrollTo)} scrolled={scrolled} activeSection={activeSection}/>
+      <HeaderComponent scrollTo={(scrollTo)} scrolled={scrolled} activeSection={activeSection} />
 
 
       {/* HERO */}
@@ -172,7 +173,7 @@ export default function App() {
 
           <h1 className="animate-fade-in-up delay-200 opacity-0 font-display font-bold text-5xl sm:text-6xl md:text-7xl text-white leading-[1.1] mb-4">
             Hi, I'm{' '}
-            <span className="text-gradient">Raymart</span>
+            <span className="text-gradient">&lt;Matt /&gt;</span>
           </h1>
 
           {/* Animated title */}
@@ -245,8 +246,8 @@ export default function App() {
                   concept and design to deployment and maintenance.
                 </p>
                 <p>
-                  Over the years, I've worked on projects ranging from business platforms to financial systems, 
-                  turning complex requirements into practical, user-friendly solutions. Each project has taught me 
+                  Over the years, I've worked on projects ranging from business platforms to financial systems,
+                  turning complex requirements into practical, user-friendly solutions. Each project has taught me
                   something new about building software that works well and makes a difference.
                 </p>
                 {/* <p>
@@ -451,14 +452,22 @@ export default function App() {
 
               {/* Disclaimer */}
               <div className="pt-4 border-t border-slate-800">
-                <p className="text-xs text-slate-500 italic">
-                  * Project details kept confidential per client agreement. Demo links available upon request.
-                </p>
+                {selectedProject.hasLink ? (
+                  <a href='href="https://example.com"' className="text-xs text-cyan-500 italic">
+                    <span>
+                      View Live Site
+                    </span>
+                  </a>) : (
+                  <p className="text-xs text-slate-500 italic">
+                    * Project details kept confidential per client agreement.
+                  </p>)
+                }
               </div>
             </div>
           </div>
         </div>
       )}
+      {/* </div> */}
     </div>
   );
 }
